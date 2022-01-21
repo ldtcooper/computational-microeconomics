@@ -1,0 +1,192 @@
+Problem:    hotdog
+Rows:       57
+Columns:    35 (32 integer, 32 binary)
+Non-zeros:  136
+Status:     INTEGER OPTIMAL
+Objective:  demand_served = 30 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 demand_served
+                                  30                             
+     2 service[c1]                 0            -0               
+     3 service[c2]                 0            -0               
+     4 service[c3]                 0            -0               
+     5 service[c4]                 0            -0               
+     6 service[c5]                 0            -0               
+     7 service[c6]                 0            -0               
+     8 service[c7]                 0            -0               
+     9 service[c8]                 0            -0               
+    10 reach_to_left[c1,s1]
+                                  45                          49 
+    11 reach_to_left[c1,s2]
+                                  -9                          49 
+    12 reach_to_left[c1,s3]
+                                 -11                          49 
+    13 reach_to_left[c2,s1]
+                                  45                          48 
+    14 reach_to_left[c2,s2]
+                                  -9                          48 
+    15 reach_to_left[c2,s3]
+                                 -11                          48 
+    16 reach_to_left[c3,s1]
+                                  45                          46 
+    17 reach_to_left[c3,s2]
+                                  -9                          46 
+    18 reach_to_left[c3,s3]
+                                 -11                          46 
+    19 reach_to_left[c4,s1]
+                                  -5                          43 
+    20 reach_to_left[c4,s2]
+                                  41                          43 
+    21 reach_to_left[c4,s3]
+                                 -11                          43 
+    22 reach_to_left[c5,s1]
+                                  -5                          42 
+    23 reach_to_left[c5,s2]
+                                  41                          42 
+    24 reach_to_left[c5,s3]
+                                 -11                          42 
+    25 reach_to_left[c6,s1]
+                                  45                          45 
+    26 reach_to_left[c6,s2]
+                                  -9                          45 
+    27 reach_to_left[c6,s3]
+                                 -11                          45 
+    28 reach_to_left[c7,s1]
+                                  -5                          39 
+    29 reach_to_left[c7,s2]
+                                  -9                          39 
+    30 reach_to_left[c7,s3]
+                                  39                          39 
+    31 reach_to_left[c8,s1]
+                                  -5                          42 
+    32 reach_to_left[c8,s2]
+                                  41                          42 
+    33 reach_to_left[c8,s3]
+                                 -11                          42 
+    34 reach_to_right[c1,s1]
+                                  55                          55 
+    35 reach_to_right[c1,s2]
+                                   9                          55 
+    36 reach_to_right[c1,s3]
+                                  11                          55 
+    37 reach_to_right[c2,s1]
+                                  55                          58 
+    38 reach_to_right[c2,s2]
+                                   9                          58 
+    39 reach_to_right[c2,s3]
+                                  11                          58 
+    40 reach_to_right[c3,s1]
+                                  55                          58 
+    41 reach_to_right[c3,s2]
+                                   9                          58 
+    42 reach_to_right[c3,s3]
+                                  11                          58 
+    43 reach_to_right[c4,s1]
+                                   5                          59 
+    44 reach_to_right[c4,s2]
+                                  59                          59 
+    45 reach_to_right[c4,s3]
+                                  11                          59 
+    46 reach_to_right[c5,s1]
+                                   5                          62 
+    47 reach_to_right[c5,s2]
+                                  59                          62 
+    48 reach_to_right[c5,s3]
+                                  11                          62 
+    49 reach_to_right[c6,s1]
+                                  55                          67 
+    50 reach_to_right[c6,s2]
+                                   9                          67 
+    51 reach_to_right[c6,s3]
+                                  11                          67 
+    52 reach_to_right[c7,s1]
+                                   5                          63 
+    53 reach_to_right[c7,s2]
+                                   9                          63 
+    54 reach_to_right[c7,s3]
+                                  61                          63 
+    55 reach_to_right[c8,s1]
+                                   5                          72 
+    56 reach_to_right[c8,s2]
+                                  59                          72 
+    57 reach_to_right[c8,s3]
+                                  11                          72 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 served[c1]   *              1             0             1 
+     2 served[c2]   *              1             0             1 
+     3 served[c3]   *              1             0             1 
+     4 served[c4]   *              1             0             1 
+     5 served[c5]   *              1             0             1 
+     6 served[c6]   *              1             0             1 
+     7 served[c7]   *              1             0             1 
+     8 served[c8]   *              1             0             1 
+     9 served_by[c1,s1]
+                    *              1             0             1 
+    10 served_by[c1,s2]
+                    *              0             0             1 
+    11 served_by[c1,s3]
+                    *              0             0             1 
+    12 served_by[c2,s1]
+                    *              1             0             1 
+    13 served_by[c2,s2]
+                    *              0             0             1 
+    14 served_by[c2,s3]
+                    *              0             0             1 
+    15 served_by[c3,s1]
+                    *              1             0             1 
+    16 served_by[c3,s2]
+                    *              0             0             1 
+    17 served_by[c3,s3]
+                    *              0             0             1 
+    18 served_by[c4,s1]
+                    *              0             0             1 
+    19 served_by[c4,s2]
+                    *              1             0             1 
+    20 served_by[c4,s3]
+                    *              0             0             1 
+    21 served_by[c5,s1]
+                    *              0             0             1 
+    22 served_by[c5,s2]
+                    *              1             0             1 
+    23 served_by[c5,s3]
+                    *              0             0             1 
+    24 served_by[c6,s1]
+                    *              1             0             1 
+    25 served_by[c6,s2]
+                    *              0             0             1 
+    26 served_by[c6,s3]
+                    *              0             0             1 
+    27 served_by[c7,s1]
+                    *              0             0             1 
+    28 served_by[c7,s2]
+                    *              0             0             1 
+    29 served_by[c7,s3]
+                    *              1             0             1 
+    30 served_by[c8,s1]
+                    *              0             0             1 
+    31 served_by[c8,s2]
+                    *              1             0             1 
+    32 served_by[c8,s3]
+                    *              0             0             1 
+    33 placement[s1]
+                                   5                             
+    34 placement[s2]
+                                   9                             
+    35 placement[s3]
+                                  11                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
