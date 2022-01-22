@@ -1,0 +1,48 @@
+Problem:    courses_fractional
+Rows:       4
+Columns:    4
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  effort_exerted = 8 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 effort_exerted
+                    B              8                             
+     2 required_points[ns]
+                    NL            10            10                    0.153846 
+     3 required_points[ss]
+                    NL            10            10                         0.5 
+     4 required_points[hu]
+                    NL            10            10                    0.192308 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 take_class[neuro]
+                    B              0                           1 
+     2 take_class[stats]
+                    B              1                           1 
+     3 take_class[bioph]
+                    NU             1                           1     -0.461538 
+     4 take_class[gwarm]
+                    B            0.5                           1 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 8.88e-16 on column 1
+        max.rel.err = 8.07e-17 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
