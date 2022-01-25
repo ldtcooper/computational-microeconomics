@@ -1,0 +1,107 @@
+Problem:    tasks
+Rows:       31
+Columns:    13 (9 integer, 9 binary)
+Non-zeros:  64
+Status:     INTEGER OPTIMAL
+Objective:  total_time = 9 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 total_time                  9                             
+     2 one_earlier[tA,tA]
+                                   0                           1 
+     3 one_earlier[tA,tB]
+                                   1                           1 
+     4 one_earlier[tA,tC]
+                                   1                           1 
+     5 one_earlier[tB,tA]
+                                   1                           1 
+     6 one_earlier[tB,tB]
+                                   0                           1 
+     7 one_earlier[tB,tC]
+                                   1                           1 
+     8 one_earlier[tC,tA]
+                                   1                           1 
+     9 one_earlier[tC,tB]
+                                   1                           1 
+    10 one_earlier[tC,tC]
+                                   0                           1 
+    11 last_one[tA]                0            -0               
+    12 last_one[tB]                9            -0               
+    13 last_one[tC]                5            -0               
+    14 time_difference_constraint_1[tA,tA]
+                                   0            -0               
+    15 time_difference_constraint_1[tA,tB]
+                                  91            10               
+    16 time_difference_constraint_1[tA,tC]
+                                  95            10               
+    17 time_difference_constraint_1[tB,tA]
+                                   9             8               
+    18 time_difference_constraint_1[tB,tB]
+                                   0            -0               
+    19 time_difference_constraint_1[tB,tC]
+                                   4             4               
+    20 time_difference_constraint_1[tC,tA]
+                                   5             5               
+    21 time_difference_constraint_1[tC,tB]
+                                  96            10               
+    22 time_difference_constraint_1[tC,tC]
+                                   0            -0               
+    23 time_difference_constraint_2[tA,tA]
+                                   0            -0               
+    24 time_difference_constraint_2[tA,tB]
+                                   9             8               
+    25 time_difference_constraint_2[tA,tC]
+                                   5             5               
+    26 time_difference_constraint_2[tB,tA]
+                                  91            10               
+    27 time_difference_constraint_2[tB,tB]
+                                   0            -0               
+    28 time_difference_constraint_2[tB,tC]
+                                  96            10               
+    29 time_difference_constraint_2[tC,tA]
+                                  95            10               
+    30 time_difference_constraint_2[tC,tB]
+                                   4             4               
+    31 time_difference_constraint_2[tC,tC]
+                                   0            -0               
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 scheduled_time[tA]
+                                   9             0               
+     2 scheduled_time[tB]
+                                   0             0               
+     3 scheduled_time[tC]
+                                   4             0               
+     4 last_time                   9                             
+     5 earlier_than[tA,tA]
+                    *              0             0             1 
+     6 earlier_than[tB,tA]
+                    *              1             0             1 
+     7 earlier_than[tA,tB]
+                    *              0             0             1 
+     8 earlier_than[tC,tA]
+                    *              1             0             1 
+     9 earlier_than[tA,tC]
+                    *              0             0             1 
+    10 earlier_than[tB,tB]
+                    *              0             0             1 
+    11 earlier_than[tC,tB]
+                    *              0             0             1 
+    12 earlier_than[tB,tC]
+                    *              1             0             1 
+    13 earlier_than[tC,tC]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
