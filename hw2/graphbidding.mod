@@ -11,16 +11,16 @@ param num_items; /*number of items: 5 in example*/
 
 var assigned{b in BIDDERS, i in ITEMS}, binary; /*set to 1 if b receives i*/
 var positive_applies{b in BIDDERS, e in POSITIVE_HYPEREDGES}, binary; /* set to 1 if b receives all items in positive hyperedge e */
-var negative_applies{b in BIDDERS, e in NEGATIVE_HYPEREDGES}, binary; /* (set to 1 if b receives all items in negative hyperedge e */
+var negative_applies{b in BIDDERS, e in NEGATIVE_HYPEREDGES}, binary; /* set to 1 if b receives all items in negative hyperedge e */
 
 maximize efficiency: (sum{b in BIDDERS, p in POSITIVE_HYPEREDGES} positive_applies[b,p] * positive_valuation[b,p]) - (sum{b in BIDDERS, n in NEGATIVE_HYPEREDGES} negative_applies[b,n] * negative_valuation[b,n]);
 
 /* no item given to more than one person */
 s.t. assign_once{i in ITEMS}: sum{b in BIDDERS} assigned[b,i] <= 1;
 /* positive_applied set only when all items touching positive hyperedge e assigned to bidder b*/
-s.t. positive_constraint{b in BIDDERS, e in POSITIVE_HYPEREDGES}:  num_items * positive_applies[b,e] + sum{i in ITEMS} occurs_in_positive[i,e] - sum{i in ITEMS} occurs_in_positive[i,e] * assigned[b,i] <= num_items;
-/* positive_applied set only when all items touching positive hyperedge e assigned to bidder b*/
-s.t. negative_constraint{b in BIDDERS, e in NEGATIVE_HYPEREDGES}:  /* you need to fill this in */
+s.t. positive_constraint{b in BIDDERS, e in POSITIVE_HYPEREDGES}:  (num_items * positive_applies[b,e]) + sum{i in ITEMS} occurs_in_positive[i,e] - (sum{i in ITEMS} occurs_in_positive[i,e] * assigned[b,i]) <= num_items;
+/* netgative_applied set only when all items touching netgative hyperedge e assigned to bidder b*/
+s.t. negative_constraint{b in BIDDERS, e in NEGATIVE_HYPEREDGES}:  (sum{i in ITEMS} occurs_in_negative[i,e] - (sum{i in ITEMS} (occurs_in_negative[i,e] * assigned[b,i]))) - (num_items * negative_applies[b,e]) <= -1;
 
 data;
 
