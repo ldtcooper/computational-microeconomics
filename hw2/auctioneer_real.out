@@ -1,0 +1,52 @@
+Problem:    auctioneer
+Rows:       9
+Columns:    10
+Non-zeros:  49
+Status:     OPTIMAL
+Objective:  least_proft = 2.171717172 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 least_proft  B        2.17172                             
+     2 profit[q]    NS             0            -0             =         < eps
+     3 profit[r]    NS             0            -0             =         < eps
+     4 profit[s]    NS             0            -0             =         < eps
+     5 profit[t]    NS             0            -0             =         < eps
+     6 get_worst[q] NL             0            -0                   -0.328283 
+     7 get_worst[r] NL             0            -0                   -0.227273 
+     8 get_worst[s] NL             0            -0                   -0.272727 
+     9 get_worst[t] NL             0            -0                   -0.171717 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 accepted[a]  B       0.909091             0             1 
+     2 accepted[b]  NU             1             0             1       2.17172 
+     3 accepted[c]  B       0.888889             0             1 
+     4 accepted[d]  B       0.333333             0             1 
+     5 accepted[e]  NL             0             0             1     -0.717172 
+     6 profits[q]   B        2.17172                             
+     7 profits[r]   B        2.17172                             
+     8 profits[s]   B        2.17172                             
+     9 profits[t]   B        2.17172                             
+    10 worst_case_profit
+                    B        2.17172             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
