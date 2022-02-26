@@ -33,6 +33,8 @@ data;
 # v4                 0 1;
 
 # default: C is special
+set VOTES := v1 v2 v3 v4;
+set OTHER_ALTERNATIVES := a b;
 param special_score := v1 1 v2 1 v3 0 v4 1;
 param other_score: a b :=
 v1                 2 0
