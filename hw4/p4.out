@@ -1,0 +1,182 @@
+Problem:    p4
+Rows:       73
+Columns:    5
+Non-zeros:  99
+Status:     OPTIMAL
+Objective:  max_margin = 0 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 max_margin   B              0                             
+     2 preferred_greater[p1,p1]
+                    NL             0            -0                          -1 
+     3 preferred_greater[p1,p2]
+                    B              0            -0               
+     4 preferred_greater[p1,p3]
+                    B              0            -0               
+     5 preferred_greater[p1,p4]
+                    B              0            -0               
+     6 preferred_greater[p1,u1]
+                    B              0            -0               
+     7 preferred_greater[p1,u2]
+                    B              0            -0               
+     8 preferred_greater[p1,u3]
+                    B              0            -0               
+     9 preferred_greater[p1,u4]
+                    B              0            -0               
+    10 preferred_greater[p2,p1]
+                    B              0            -0               
+    11 preferred_greater[p2,p2]
+                    B              0            -0               
+    12 preferred_greater[p2,p3]
+                    B              0            -0               
+    13 preferred_greater[p2,p4]
+                    B              0            -0               
+    14 preferred_greater[p2,u1]
+                    B              0            -0               
+    15 preferred_greater[p2,u2]
+                    B              0            -0               
+    16 preferred_greater[p2,u3]
+                    B              0            -0               
+    17 preferred_greater[p2,u4]
+                    B              0            -0               
+    18 preferred_greater[p3,p1]
+                    B              0            -0               
+    19 preferred_greater[p3,p2]
+                    B              0            -0               
+    20 preferred_greater[p3,p3]
+                    B              0            -0               
+    21 preferred_greater[p3,p4]
+                    B              0            -0               
+    22 preferred_greater[p3,u1]
+                    B              0            -0               
+    23 preferred_greater[p3,u2]
+                    B              0            -0               
+    24 preferred_greater[p3,u3]
+                    B              0            -0               
+    25 preferred_greater[p3,u4]
+                    B              0            -0               
+    26 preferred_greater[p4,p1]
+                    B              0            -0               
+    27 preferred_greater[p4,p2]
+                    B              0            -0               
+    28 preferred_greater[p4,p3]
+                    B              0            -0               
+    29 preferred_greater[p4,p4]
+                    B              0            -0               
+    30 preferred_greater[p4,u1]
+                    B              0            -0               
+    31 preferred_greater[p4,u2]
+                    B              0            -0               
+    32 preferred_greater[p4,u3]
+                    B              0            -0               
+    33 preferred_greater[p4,u4]
+                    B              0            -0               
+    34 preferred_greater[u1,p1]
+                    B              0            -0               
+    35 preferred_greater[u1,p2]
+                    B              0            -0               
+    36 preferred_greater[u1,p3]
+                    B              0            -0               
+    37 preferred_greater[u1,p4]
+                    B              0            -0               
+    38 preferred_greater[u1,u1]
+                    B              0            -0               
+    39 preferred_greater[u1,u2]
+                    B              0            -0               
+    40 preferred_greater[u1,u3]
+                    B              0            -0               
+    41 preferred_greater[u1,u4]
+                    B              0            -0               
+    42 preferred_greater[u2,p1]
+                    B              0            -0               
+    43 preferred_greater[u2,p2]
+                    B              0            -0               
+    44 preferred_greater[u2,p3]
+                    B              0            -0               
+    45 preferred_greater[u2,p4]
+                    B              0            -0               
+    46 preferred_greater[u2,u1]
+                    B              0            -0               
+    47 preferred_greater[u2,u2]
+                    B              0            -0               
+    48 preferred_greater[u2,u3]
+                    B              0            -0               
+    49 preferred_greater[u2,u4]
+                    B              0            -0               
+    50 preferred_greater[u3,p1]
+                    B              0            -0               
+    51 preferred_greater[u3,p2]
+                    B              0            -0               
+    52 preferred_greater[u3,p3]
+                    B              0            -0               
+    53 preferred_greater[u3,p4]
+                    B              0            -0               
+    54 preferred_greater[u3,u1]
+                    B              0            -0               
+    55 preferred_greater[u3,u2]
+                    B              0            -0               
+    56 preferred_greater[u3,u3]
+                    B              0            -0               
+    57 preferred_greater[u3,u4]
+                    B              0            -0               
+    58 preferred_greater[u4,p1]
+                    B              0            -0               
+    59 preferred_greater[u4,p2]
+                    B              0            -0               
+    60 preferred_greater[u4,p3]
+                    B              0            -0               
+    61 preferred_greater[u4,p4]
+                    B              0            -0               
+    62 preferred_greater[u4,u1]
+                    B              0            -0               
+    63 preferred_greater[u4,u2]
+                    B              0            -0               
+    64 preferred_greater[u4,u3]
+                    B              0            -0               
+    65 preferred_greater[u4,u4]
+                    B              0            -0               
+    66 util_positive[A]
+                    NL             0            -0                       < eps
+    67 util_positive[B]
+                    NL             0            -0                       < eps
+    68 util_positive[C]
+                    NL             0            -0                       < eps
+    69 util_positive[D]
+                    NL             0            -0                       < eps
+    70 util_in_range[A]
+                    B              0                           1 
+    71 util_in_range[B]
+                    B              0                           1 
+    72 util_in_range[C]
+                    B              0                           1 
+    73 util_in_range[D]
+                    B              0                           1 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 utility[A]   B              0                             
+     2 utility[B]   B              0                             
+     3 utility[C]   B              0                             
+     4 utility[D]   B              0                             
+     5 margin       B              0                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

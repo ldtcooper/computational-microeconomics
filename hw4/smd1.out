@@ -1,0 +1,41 @@
+Problem:    smd
+Rows:       4
+Columns:    3
+Non-zeros:  7
+Status:     OPTIMAL
+Objective:  margin = -0.6666666667 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 margin       B      -0.666667                             
+     2 prob_one     NS             1             1             =      0.666667 
+     3 dominance[U] NL             0            -0                   -0.333333 
+     4 dominance[D] NL             2             2                   -0.666667 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 probability[M]
+                    B        1.33333                             
+     2 probability[R]
+                    B      -0.333333                             
+     3 epsilon      B      -0.666667                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.11e-16 on row 3
+        max.rel.err = 4.76e-17 on row 3
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
